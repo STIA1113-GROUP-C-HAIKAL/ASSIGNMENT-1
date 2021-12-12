@@ -192,9 +192,11 @@ public class assignment1coding {
 				+ totalHatchetsPrice + totalFlaresPrice + totalTorchPrice + totalWhistlePrice + totalTinOpenerPrice
 				+ totalRescueQuitsPrice + totalSARTPrice + totalJackKnifePrice;
 		System.out.println();
-		System.out.println("Total price of the whole equipment is : USD " + totalPrice);
+		System.out.print("Total price of the whole equipment is : USD ");
+		System.out.printf("%.2f", totalPrice);
 		double totalRevenueOrLoss = moneyAcquired - totalPrice;
-		System.out.println("Total revenue / loss of your budget is : USD ");
+		System.out.println();
+		System.out.print("Total revenue / loss of your budget is : USD ");
 		System.out.printf("%.2f", totalRevenueOrLoss);
 		System.out.println();
 		System.out.print("Please insert how many trips will your ship be doing in one year : ");
