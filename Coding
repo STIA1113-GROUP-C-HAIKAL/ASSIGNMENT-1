@@ -1,0 +1,209 @@
+package assignment1;
+
+import java.util.Scanner;
+
+public class assignment1coding {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double lengthOfShip;
+		double widthOfShip;
+		double insuranceCost;
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Welcome to the ship safety equipment predictor!");
+		System.out.println(
+				"This program is meant to predict how many budget be put in the safety equipment of a cruise liner.");
+		System.out.println(
+				"We will start with the ship's overall 2D size, safe distance, sprinklers, and fire extinguishers needed for the ship.");
+		System.out.println("------------------------------------------------------------------------------------------------------------");
+		System.out.print("Please enter length of ship : ");
+		lengthOfShip = sc.nextDouble();
+		System.out.println();
+		System.out.print("Please enter width of ship : ");
+		System.out.println();
+		widthOfShip = sc.nextDouble();
+		double ship2DApproxSize = widthOfShip + lengthOfShip;
+		double distanceToBeAchieved = (ship2DApproxSize * 2) / 5;
+		int sprinklerApprox = (int) (17 * ship2DApproxSize);
+		int fireExtinguisherApprox = (int) (ship2DApproxSize * 5) / 3;
+		System.out.print("Please insert the number of guest passengers that will be aboard in the ship : ");
+		int guestPassengers = sc.nextInt();
+		System.out.println();
+		System.out.print("Please insert the number of insurance money the guest passengers will be obliged to pay : ");
+		insuranceCost = sc.nextDouble();
+		double moneyAcquired = guestPassengers * insuranceCost;
+		System.out.println();
+		System.out.print("Please insert the number of employees that will be aboard the ship : ");
+		int employees = sc.nextInt();
+		int totalPassengers = guestPassengers + employees;
+		int lifeboats = (int) (((totalPassengers * 37.5) / 100) / 75) * 2;
+		int employeesPerLifeboat = employees / lifeboats;
+		String anything0 = sc.nextLine();
+
+		System.out.println();
+		System.out.println("==========================================================");
+		System.out.println("Size and distance details : ");
+		System.out.println("Ship's 2D size  			= " + ship2DApproxSize + " meters");
+		System.out.println("Ship's safe distance to an island 	= " + distanceToBeAchieved + " meters");
+		System.out.println();
+		System.out.println("---------------------------------------------------------");
+		System.out.println();
+		System.out.println("Equipment details : ");
+		System.out.println("Life boats that will be on the ship = " + lifeboats);
+		System.out.println();
+		System.out.println("Per-lifeboat equipment details : ");
+		System.out.println("Life Jackets			= 150 ");
+		System.out.println("Box of food supply		= 7 ");
+		System.out.println("Litres of water			= 150 ");
+		System.out.println("Drinking vessels		= 150 ");
+		System.out.println("Fishing tackles			= 1 ");
+		System.out.println("Survival manual			= 1 ");
+		System.out.println("Compass				= 1 ");
+		System.out.println("Buckets				= 2 ");
+		System.out.println("Hatchets			= 2 ");
+		System.out.println("Flare kits			= 1 ");
+		System.out.println("Electronic Torches		= 1 ");
+		System.out.println("Whistle				= 1 ");
+		System.out.println("Tin openers			= 3 ");
+		System.out.println("Rescue quits			= 2 ");
+		System.out.println("SART				= 1 ");
+		System.out.println("Fire extinguisher		= 1 ");
+		System.out.println("Jack knife			= 1 ");
+		System.out.println("Employees per life boat		= " + employeesPerLifeboat);
+		System.out.println("========================================================== ");
+		System.out.print("Please insert any letters/numbers to continue : ");
+		String anything1 = sc.nextLine();
+		System.out.println();
+
+		int totalLifeJackets = 150 * lifeboats;
+		int totalFoodSupply = 7 * lifeboats;
+		int totalWaterSupply = (150 * 5) * lifeboats;
+		int totalDrinkingVessel = 150 * lifeboats;
+		int totalFishingTackle = 1 * lifeboats;
+		int totalSurvivalManual = 1 * lifeboats;
+		int totalCompass = 1 * lifeboats;
+		int totalBuckets = 2 * lifeboats;
+		int totalHatchets = 2 * lifeboats;
+		int totalFlares = 1 * lifeboats;
+		int totalTorch = 1 * lifeboats;
+		int totalWhistle = 1 * lifeboats;
+		int totalTinOpeners = 3 * lifeboats;
+		int totalRescueQuits = 2 * lifeboats;
+		int totalSART = 1 * lifeboats;
+		int totalFireExtinguisher = 1 * lifeboats;
+		int totalfireExtinguisherFinal = totalFireExtinguisher + fireExtinguisherApprox;
+		int totalJackKnife = 1 * lifeboats;
+		System.out.println("==========================================================");
+		System.out.println("Total equipment details : ");
+		System.out.println("Total Life jackets on all lifeboats		: " + totalLifeJackets);
+		System.out.println("Total Food supply on all lifeboats		: " + totalFoodSupply);
+		System.out.println("Total water supply on all lifeboats		: " + totalWaterSupply);
+		System.out.println("Total Drinking vessels on all lifeboats		: " + totalDrinkingVessel);
+		System.out.println("Total Fishing tackles on all lifeboats		: " + totalFishingTackle);
+		System.out.println("Total Survival manual on all lifeboats		: " + totalSurvivalManual);
+		System.out.println("Total Compass on all lifeboats			: " + totalCompass);
+		System.out.println("Total Buckets on all lifeboats			: " + totalBuckets);
+		System.out.println("Total Hatchets on all lifeboats			: " + totalHatchets);
+		System.out.println("Total Flare kits on all lifeboats		: " + totalFlares);
+		System.out.println("Total Electronic torches on all lifeboats	: " + totalTorch);
+		System.out.println("Total Whistles on all lifeboats			: " + totalWhistle);
+		System.out.println("Total Tin openers on all lifeboats		: " + totalTinOpeners);
+		System.out.println("Total Rescue quits on all lifeboats		: " + totalRescueQuits);
+		System.out.println("Total SART on all lifeboats			: " + totalSART);
+		System.out.println("Total Fire extinguisher on all lifeboats	: " + totalFireExtinguisher);
+		System.out.println("Total Fire extinguisher on boat and lifeboats	: " + totalfireExtinguisherFinal);
+		System.out.println("Total Jack knives on all lifeboats		: " + totalJackKnife);
+		System.out.println("==========================================================");
+		System.out.print("Please insert any letters/numbers to continue : ");
+		String anything2 = sc.nextLine();
+
+		System.out.println("==========================================================");
+		System.out.println("Price details : ");
+		System.out.println("Price of one sprinkler			=  USD 2.00");
+		System.out.println("Price of one fire extinguisher		=  USD 35.00");
+		System.out.println("Price of one life boat			=  USD 50000.00");
+		System.out.println("Price of one life jacket		=  USD 80.00");
+		System.out.println("Price of one food supply		=  USD 121.00");
+		System.out.println("Price of one litre of water		=  USD 1.80");
+		System.out.println("Price of one drinking vessel		=  USD 7.00");
+		System.out.println("Price of one fishing tackle		=  USD 25.00");
+		System.out.println("Price of one survival manual		=  USD 5.00");
+		System.out.println("Price of one compass			=  USD 120.00");
+		System.out.println("Price of one bucket			=  USD 2.00");
+		System.out.println("Price of one hatchet			=  USD 200.00");
+		System.out.println("Price of one flare kit			=  USD 114.26");
+		System.out.println("Price of one electronic torch		=  USD 9.50");
+		System.out.println("Price of one whistle			=  USD 5.00");
+		System.out.println("Price of one tin opener			=  USD 8.00");
+		System.out.println("Price of one rescue quit		=  USD 19.00");
+		System.out.println("Price of one SART			=  USD 71.30");
+		System.out.println("Price of one jack knife			=  USD 13.00");
+		System.out.println("==========================================================");
+		System.out.print("Please insert any letters/numbers to continue : ");
+		String anything3 = sc.nextLine();
+		System.out.println();
+
+		double totalSprinklersPrice = sprinklerApprox * 2;
+		double totalFireExtinguisherPrice = totalfireExtinguisherFinal * 35;
+		double totalLifeBoatsPrice = lifeboats * 50000;
+		double totalLifeJacketsPrice = totalLifeJackets * 80;
+		double totalFoodPrice = totalFoodSupply * 121;
+		double totalWaterPrice = totalWaterSupply * 1.80;
+		double totalDrinkingVesselPrice = totalDrinkingVessel * 7;
+		double totalFishingTacklePrice = totalFishingTackle * 25;
+		double totalSurvivalManualPrice = totalSurvivalManual * 5;
+		double totalCompassPrice = totalCompass * 120;
+		double totalBucketsPrice = totalBuckets * 2;
+		double totalHatchetsPrice = totalHatchets * 200;
+		double totalFlaresPrice = totalFlares * 114.26;
+		double totalTorchPrice = totalTorch * 9.50;
+		double totalWhistlePrice = totalWhistle * 5;
+		double totalTinOpenerPrice = totalTinOpeners * 8;
+		double totalRescueQuitsPrice = totalRescueQuits * 19;
+		double totalSARTPrice = totalSART * 71.30;
+		double totalJackKnifePrice = totalJackKnife * 13;
+		System.out.println("==========================================================");
+		System.out.println("All equipments price details : ");
+		System.out.println("Sprinklers		= " + totalSprinklersPrice);
+		System.out.println("Fire Extinguishers	= " + totalFireExtinguisherPrice);
+		System.out.println("Lifeboats		= " + totalLifeBoatsPrice);
+		System.out.println("Life jackets		= " + totalLifeJacketsPrice);
+		System.out.println("Emergency food		= " + totalFoodPrice);
+		System.out.println("Water in litres		= " + totalWaterPrice);
+		System.out.println("Drinking vessels	= " + totalDrinkingVesselPrice);
+		System.out.println("Fishing tackles		= " + totalFishingTacklePrice);
+		System.out.println("Survival manuals	= " + totalSurvivalManualPrice);
+		System.out.println("Compass			= " + totalCompassPrice);
+		System.out.println("Buckets			= " + totalBucketsPrice);
+		System.out.println("Hatchets		= " + totalHatchetsPrice);
+		System.out.println("Flare kits		= " + totalFlaresPrice);
+		System.out.println("Electronic torches	= " + totalTorchPrice);
+		System.out.println("Whistles		= " + totalWhistlePrice);
+		System.out.println("Tin openers		= " + totalTinOpenerPrice);
+		System.out.println("Rescue quits		= " + totalRescueQuitsPrice);
+		System.out.println("SARTs			= " + totalSARTPrice);
+		System.out.println("Jack knives		= " + totalJackKnifePrice);
+		System.out.println("==========================================================");
+		double totalPrice = totalSprinklersPrice + totalFireExtinguisherPrice + totalLifeBoatsPrice
+				+ totalLifeJacketsPrice + totalFoodPrice + totalWaterPrice + totalDrinkingVesselPrice
+				+ totalFishingTacklePrice + totalSurvivalManualPrice + totalCompassPrice + totalBucketsPrice
+				+ totalHatchetsPrice + totalFlaresPrice + totalTorchPrice + totalWhistlePrice + totalTinOpenerPrice
+				+ totalRescueQuitsPrice + totalSARTPrice + totalJackKnifePrice;
+		System.out.println();
+		System.out.println("Total price of the whole equipment is : USD " + totalPrice);
+		double totalRevenueOrLoss = moneyAcquired - totalPrice;
+		System.out.println("Total revenue / loss of your budget is : USD ");
+		System.out.printf("%.2f", totalRevenueOrLoss);
+		System.out.println();
+		System.out.print("Please insert how many trips will your ship be doing in one year : ");
+		int tripsPerOneYear = sc.nextInt();
+		double totalRevenueOrLossAfterSailing = ((tripsPerOneYear * 5) * moneyAcquired) - totalPrice;
+		System.out.print(
+				"The total revenue / loss of your budget after 5 years is : USD ");
+		System.out.printf("%.2f", totalRevenueOrLossAfterSailing);
+		sc.close();
+	}
+
+}
