@@ -1,0 +1,179 @@
+>START
+		
+		OUTPUT 			"Welcome to the ship safety equipment predictor!"
+		OUTPUT 			"This program is meant to predict how many budget be put in the safety equipment of a cruise liner."
+		OUTPUT 			"We will start with the ship's overall 2D size, safe distance, sprinklers, and fire extinguishers needed for the ship."
+		OUTPUT 			"Please enter length of ship : "
+		INPUT 			length of ship
+		OUTPUT 			"Please enter width of ship : "
+		INPUT 			width of ship
+		CALCULATE 		ship2DApproxSize = width + length
+		CALCULATE 		distanceToBeAchieved = (ship2DApproxSize * 2) / 5
+		OUTPUT 			ship2DApproxSize
+		OUTPUT 			distanceToBeAchieved
+		CALCULATE 		sprinklerApprox = 17 * ship2DApproxSize
+		OUTPUT 			approxSprinklers
+		CALCULATE 		fireExtinguisherApprox = (ship2DApproxSize * 5) / 3
+		OUTPUT 			fireExtinguisherApprox
+		OUTPUT 			"Please insert the number of guest passengers that will be aboard in the ship : "
+		INPUT 			guestPassengers
+		OUTPUT 			"Please insert the number of insurance money the guest passengers will be obliged to pay : "
+		INPUT 			insuranceCost
+		CALCULATE		moneyAcquired = guestPassengers * insuranceCost
+		OUTPUT			moneyAcquired
+		OUTPUT			"Please insert the number of employees that will be aboard the ship"
+		INPUT			employees
+		CALCULATE		totalPassengers = guestPassengers + employees
+		CALCULATE		lifeboats = (((totalPassengers * 37.5) / 100) /75 ) * 2
+		CALCULATE		employeesPerLifeboat = employees / lifeboats
+		OUTPUT
+		OUTPUT			"=========================================================="
+		OUTPUT			"Size and distance details : "
+		OUTPUT			"Ship's 2D size 						= " + ship2DApproxSize
+		OUTPUT			"Ship's safe distance to an island		= " + distanceToBeAchieved
+		OUTPUT
+		OUTPUT			"----------------------------------------------------------"
+		OUTPUT
+		OUTPUT			"Equipment details : "
+		OUTPUT			"Lifeboats that will be on the ship = " lifeboats
+		OUTPUT			
+		OUTPUT			"Per-lifeboat equipment details : "
+		OUTPUT			"Life Jackets 			= 150 "
+		OUTPUT			"Box of Food supply 	= 7"
+		OUTPUT			"Litres of water 		= 750"
+		OUTPUT			"Drinking vessels 		= 150"
+		OUTPUT			"Fishing tackles 		= 1"
+		OUTPUT			"Survival manual		= 1"
+		OUTPUT			"Compass				= 1
+		OUTPUT			"Buckets				= 2"
+		OUTPUT			"Hatchets				= 2"
+		OUTPUT			"Flare kits				= 1"
+		OUTPUT			"Electronic Torches		= 1"
+		OUTPUT			"Whistle				= 1"
+		OUTPUT			"Tin Openers			= 3"
+		OUTPUT			"Rescue quits			= 2"
+		OUTPUT			"SART					= 1"
+		OUTPUT			"Fire Extinguisher 		= 1"
+		OUTPUT			"Jack knife				= 1"
+		OUTPUT			"Employees per lifeboat	= " + employeesPerLifeboat
+		OUTPUT			"=========================================================="
+		OUTPUT			"Please insert any letters/numbers to continue"
+		INPUT			anything1
+		CALCULATE		totalLifeJackets = 150 * lifeboats
+		CALCULATE		totalFoodSupply = lifeboats * 7
+		CALCULATE		totalWaterSupply = (150 * 5) * lifeboats
+		CALCULATE		totalDrinkingVessel = 150 * lifeboats
+		CALCULATE		totalFishingTackle = lifeboats * 1
+		CALCULATE		totalSurvivalManual = lifeboats * 1
+		CALCULATE		totalCompass = lifeboats * 1
+		CALCULATE		totalBuckets = lifeboats * 2
+		CALCULATE		totalHatchets = lifeboats * 2
+		CALCULATE		totalFlares = lifeboats * 1
+		CALCULATE		totalTorch = lifeboats * 1
+		CALCULATE		totalWhistle = lifeboats * 1
+		CALCULATE		totalTinOpeners = lifeboats * 3
+		CALCULATE		totalRescueQuits = lifeboats * 2
+		CALCULATE		totalSART = lifeboats * 1
+		CALCULATE		totalFireExtenguisher = lifeboats * 1
+		CACLULATE		totalFireExtinguisherFinal = totalFireExtinguisher + fireExtinguisherApprox
+		CALCULATE		totalJackKnife = lifeboats * 1
+		OUTPUT		"=========================================================="
+		OUTPUT		"Total Equipment details : "
+		OUTPUT		"Total Life Jackets on all lifeboats 			: " + totalLifeJackets
+		OUTPUT		"Total Food supply on all lifeboats 			: " + totalFoodSupply
+		OUTPUT		"Total Water supply on all lifeboats 			: " + totalWaterSupply
+		OUTPUT		"Total Drinking vessels on all lifeboats 		: " + totalDrinkingVessel
+		OUTPUT		"Total Fishing tackles on all lifeboats 		: " + fishingTackle
+		OUTPUT		"Total Survival Manual on all lifeboats 		: " + totalSurvivalManual
+		OUTPUT		"Total Compass on all lifeboats 				: " + totalCompass
+		OUTPUT		"Total Buckets on all lifeboats 				: " + totalBuckets,
+		OUTPUT		"Total Hatchets on all lifeboats 				: " + totalHatchets
+		OUTPUT		"Total Flare kits on all lifeboats 				: " + totalFlares
+		OUTPUT		"Total Electronic torches on all lifeboats 		: " + totalTorch
+		OUTPUT		"Total Whistles on all lifeboats 				: " + totalWhistle
+		OUTPUT		"Total Tin openers on all lifeboats 			: " + totalTinOpeners
+		OUTPUT		"Total Rescue quits on all lifeboats 			: " + totalRescueQuits
+		OUTPUT		"Total SART on all lifeboats 					: " + totalSART
+		OUTPUT		"Total Fire extinguisher on all lifeboats 		: " + totalFireExtinguisher
+		OUTPUT		"Total Fire extinguisher on boat and lifeboat	: " + totalFireExtinguisherFinal
+		OUTPUT		"Total Jack knives on all lifeboats 			: " + totalJackKnife	
+		OUTPUT		"=========================================================="
+		OUTPUT		"Please insert any letters/numbers to continue"
+		INPUT		anything2
+		OUTPUT
+		OUTPUT		"=========================================================="
+		OUTPUT		"Price details : "
+		OUTPUT		"Price of one sprinkler				=  USD 2.00"
+		OUTPUT		"Price of one fire extinguisher		=  USD 35.00"
+		OUTPUT		"Price of one life boat				=  USD 50000.00"
+		OUTPUT		"Price of one life jacket			=  USD 80.00"
+		OUTPUT		"Price of one food supply			=  USD 121.00"
+		OUTPUT		"Price of one litre of water		=  USD 1.80"
+		OUTPUT		"Price of one drinking vessel		=  USD 7.00"
+		OUTPUT		"Price of one fishing tackle		=  USD 25.00"
+		OUTPUT		"Price of one survival manual		=  USD 5.00"
+		OUTPUT		"Price of one compass				=  USD 120.00"
+		OUTPUT		"Price of one bucket				=  USD 2.00"
+		OUTPUT		"Price of one hatchet				=  USD 200.00"
+		OUTPUT		"Price of one flare kit				=  USD 114.26"
+		OUTPUT		"Price of one electronic torch		=  USD 9.50"
+		OUTPUT		"Price of one whistle				=  USD 5.00"
+		OUTPUT		"Price of one tin opener			=  USD 8.00"
+		OUTPUT		"Price of one rescue quit			=  USD 19.00"
+		OUTPUT		"Price of one SART					=  USD 71.30"
+		OUTPUT		"Price of one jack knife			=  USD 13.00"
+		OUTPUT		"=========================================================="
+		OUTPUT		"Please insert any letters/numbers to continue"
+		INPUT		anything3
+		OUTPUT
+		CALCULATE		totalSprinklersPrice 			= sprinklerApprox * 2
+		CALCULATE 		totalFireExtinguisherPrice 		= totalFireExtinguisherFinal * 35
+		CALCULATE		totalLifeBoatsPrice				= lifeboats * 50000
+		CALCULATE 		totalLifeJacketsPrice 			= totalLifeJackets * 80 
+		CALCULATE		totalFoodPrice 					= totalFoodSupply * 121
+		CALCULATE		totalWaterPrice 				= totalWaterSupply * 1.80
+		CALCULATE		totalDrinkingVesselPrice 		= totalDrinkingVessel * 7
+		CALCULATE		totalFishingTacklePrice 		= totalFishingTackles *  25
+		CALCULATE		totalSurvivalManualPrice	 	= totalSurvivalManual * 5
+		CALCULATE		totalCompassPrice 				= totalCompass * 120
+		CALCULATE		totalBucketsPrice 				= totalBuckets * 2
+		CALCULATE		totalHatchetsPrice 				= totalHatchets * 200
+		CALCULATE		totalFlaresPrice 				= totalFlares * 114.26
+		CALCULATE		totalTorchPrice 				= totalTorch * 9.50
+		CALCULATE		totalWhistlePrice 				= totalWhitsle * 5
+		CALCULATE		totalTinOpenerPrice 			= totalTinOpeners * 8
+		CALCULATE		totalRescueQuitsPrice 			= totalRescueQuit * 19
+		CALCULATE		totalSARTPrice 					= totalSART * 71.30
+		CALCULATE		totalJackKnifePrice 			= totalJackKnife * 13
+		OUTPUT		"=========================================================="
+		OUTPUT		"All equipments price Details :"
+		OUTPUT		"Sprinklers				= " + totalSprinklerPrice
+		OUTPUT		"Fire extinguishers		= " + totalFireExtinguisherPrice
+		OUTPUT		"Lifeboats				= " + totalLifeboatPrice
+		OUTPUT		"Life Jackets			= " + totalLifeJacketsPrice
+		OUTPUT		"Emergency food			= " + totalFoodPrice
+		OUTPUT		"Water in litres		= " + totalWaterPrice
+		OUTPUT		"Drinking vessels		= " + totalDrinkingVesselPrice
+		OUTPUT		"Fishing tackle			= " + totalFishingTacklePrice
+		OUTPUT		"Survival Manuals		= " + totalSurvivalManualPrice
+		OUTPUT		"Compass				= " + totalCompassPrice
+		OUTPUT		"Buckets				= " + totalBucketsPrice
+		OUTPUT		"Hatchets				= " + totalHatchetsPrice
+		OUTPUT		"Flare kits				= " + totalFlaresPrice
+		OUTPUT		"Electronic Torches		= " + totalTorchPrice 
+		OUTPUT		"Whistles				= " + totalWhistlePrice
+		OUTPUT		"Tin Openers			= " + totalTinOpenerPrice
+		OUTPUT		"Rescue quits			= " + totalRescueQuitsPrice
+		OUTPUT		"SART					= " + totalSARTPrice
+		OUTPUT		"Jack knives			= " + totalJackKnifePrice
+		OUTPUT		"=========================================================="
+		CALCULATE	totalPrice = totalSprinklerPrice + totalFireExtinguisherPrice + totalLifeboatPrice + totalLifeJacketsPrice + totalFoodPrice + totalWaterPrice + totalDrinkingVesselPrice + totalFishingTacklePrice + totalSurvivalManualPrice + totalCompassPrice + totalBucketsPrice + totalHatchetsPrice + totalFlaresPrice + totalTorchPrice + totalWhistlePrice + totalTinOpenerPrice + totalRescueQuitsPrice + totalSARTPrice + totalJackKnifePrice
+		OUTPUT		"Total Price of the whole equipments is : " + totalPrice
+		CALCULATE	totalRevenueOrLoss = moneyAcquired - totalPrice
+		OUTPUT		"Total Revenue / loss of your budget is : " + totalRevenueOrLoss
+		OUTPUT		"Please insert how many trips will your ship be doing in one year : "
+		INPUT		tripsPerOneYear
+		CALCULATE	totalRevenueOrLossAfterSailing = ((tripsPerOneYear * 5) * moneyAcquired) - totalPrice
+		OUTPUT		"The total Revenue / loss of your budget after 5 years is : " + totalRevenueOrLossAfterSailing
+		
+		>END
