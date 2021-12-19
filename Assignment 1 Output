@@ -1,0 +1,119 @@
+Welcome to the ship safety equipment predictor!
+This program is meant to predict how many budget be put in the safety equipment of a cruise liner.
+We will start with the ship's overall 2D size, safe distance, sprinklers, and fire extinguishers needed for the ship.
+------------------------------------------------------------------------------------------------------------
+Please enter length of ship : 296
+
+Please enter width of ship : 
+96
+Please insert the number of guest passengers that will be aboard in the ship : 2200
+
+Please insert the number of insurance money the guest passengers will be obliged to pay : 500
+
+Please insert the number of employees that will be aboard the ship : 180
+
+==========================================================
+Size and distance details : 
+Ship's 2D size  			= 392.0 meters
+Ship's safe distance to an island 	= 156.8 meters
+
+---------------------------------------------------------
+
+Equipment details : 
+Life boats that will be on the ship = 22
+
+Per-lifeboat equipment details : 
+Life Jackets			= 150 
+Box of food supply		= 7 
+Litres of water			= 150 
+Drinking vessels		= 150 
+Fishing tackles			= 1 
+Survival manual			= 1 
+Compass				= 1 
+Buckets				= 2 
+Hatchets			= 2 
+Flare kits			= 1 
+Electronic Torches		= 1 
+Whistle				= 1 
+Tin openers			= 3 
+Rescue quits			= 2 
+SART				= 1 
+Fire extinguisher		= 1 
+Jack knife			= 1 
+Employees per life boat		= 8
+========================================================== 
+Please insert any letters/numbers to continue : l
+
+==========================================================
+Total equipment details : 
+Total Life jackets on all lifeboats		: 3300
+Total Food supply on all lifeboats		: 154
+Total water supply on all lifeboats		: 16500
+Total Drinking vessels on all lifeboats		: 3300
+Total Fishing tackles on all lifeboats		: 22
+Total Survival manual on all lifeboats		: 22
+Total Compass on all lifeboats			: 22
+Total Buckets on all lifeboats			: 44
+Total Hatchets on all lifeboats			: 44
+Total Flare kits on all lifeboats		: 22
+Total Electronic torches on all lifeboats	: 22
+Total Whistles on all lifeboats			: 22
+Total Tin openers on all lifeboats		: 66
+Total Rescue quits on all lifeboats		: 44
+Total SART on all lifeboats			: 22
+Total Fire extinguisher on all lifeboats	: 22
+Total Fire extinguisher on boat and lifeboats	: 675
+Total Jack knives on all lifeboats		: 22
+==========================================================
+Please insert any letters/numbers to continue : l
+==========================================================
+Price details : 
+Price of one sprinkler			=  USD 2.00
+Price of one fire extinguisher		=  USD 35.00
+Price of one life boat			=  USD 50000.00
+Price of one life jacket		=  USD 80.00
+Price of one food supply		=  USD 121.00
+Price of one litre of water		=  USD 1.80
+Price of one drinking vessel		=  USD 7.00
+Price of one fishing tackle		=  USD 25.00
+Price of one survival manual		=  USD 5.00
+Price of one compass			=  USD 120.00
+Price of one bucket			=  USD 2.00
+Price of one hatchet			=  USD 200.00
+Price of one flare kit			=  USD 114.26
+Price of one electronic torch		=  USD 9.50
+Price of one whistle			=  USD 5.00
+Price of one tin opener			=  USD 8.00
+Price of one rescue quit		=  USD 19.00
+Price of one SART			=  USD 71.30
+Price of one jack knife			=  USD 13.00
+==========================================================
+Please insert any letters/numbers to continue : l
+
+==========================================================
+All equipments price details : 
+Sprinklers		= 13328.0
+Fire Extinguishers	= 23625.0
+Lifeboats		= 1100000.0
+Life jackets		= 264000.0
+Emergency food		= 18634.0
+Water in litres		= 29700.0
+Drinking vessels	= 23100.0
+Fishing tackles		= 550.0
+Survival manuals	= 110.0
+Compass			= 2640.0
+Buckets			= 88.0
+Hatchets		= 8800.0
+Flare kits		= 2513.7200000000003
+Electronic torches	= 209.0
+Whistles		= 110.0
+Tin openers		= 528.0
+Rescue quits		= 836.0
+SARTs			= 1568.6
+Jack knives		= 286.0
+==========================================================
+
+Total price of the whole equipment is : USD 1490626.32
+Total revenue / loss of your budget is : USD -390626.32
+Please insert how many trips will your ship be doing in one year : 1
+The total revenue / loss of your budget after 5 years is : USD 4009373.68
